@@ -8,6 +8,14 @@ package Dominio;
  *
  * @author Chris
  */
-public class Bicicleta {
-    
+public class Bicicleta extends Transporte {
+
+    public Bicicleta() {
+        super(20, 1);
+    }
+
+    @Override
+    public String toString() {
+        return "Bicicleta";
+    }
 }

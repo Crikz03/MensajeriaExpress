@@ -4,10 +4,18 @@
  */
 package PatronFactory;
 
+import Dominio.CajaMediana;
+import Dominio.Paquete;
+import Interfaces.IFactoryPaquete;
+
 /**
  *
  * @author Chris
  */
-public class BicicletaFactory {
-    
+public class FactoryCajaMediana implements IFactoryPaquete {
+
+    @Override
+    public Paquete crearPaquete() {
+        return new CajaMediana();
+    }
 }

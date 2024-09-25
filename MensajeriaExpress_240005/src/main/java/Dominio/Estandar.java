@@ -8,14 +8,14 @@ package Dominio;
  *
  * @author Chris
  */
-public class Dron extends Transporte {
+public class Estandar extends Servicio {
 
-    public Dron() {
-        super(60, 20); // Capacidad de pasajeros y carga predeterminada
+    public Estandar() {
+        super(30); // Tiempo de entrega predeterminado de 30 unidades
     }
 
     @Override
     public String toString() {
-        return "Dron";
+        return "Estandar";
     }
 }

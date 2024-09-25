@@ -2,20 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Dominio;
+package PatronFactory;
+
+import Dominio.Dron;
+import Dominio.Transporte;
+import Interfaces.IFactoryTransporte;
 
 /**
  *
  * @author Chris
  */
-public class Dron extends Transporte {
-
-    public Dron() {
-        super(60, 20); // Capacidad de pasajeros y carga predeterminada
-    }
+public class FactoryDron implements IFactoryTransporte {
 
     @Override
-    public String toString() {
-        return "Dron";
+    public Transporte crearTransporte() {
+        return new Dron();
     }
 }

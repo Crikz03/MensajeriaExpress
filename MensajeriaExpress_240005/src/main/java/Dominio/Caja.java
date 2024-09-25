@@ -8,6 +8,9 @@ package Dominio;
  *
  * @author Chris
  */
-public abstract class Caja {
-    
+public abstract class Caja extends Paquete{
+
+    public Caja(double costo) {
+        super(costo);
+    }
 }

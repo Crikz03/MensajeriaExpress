@@ -8,6 +8,14 @@ package Dominio;
  *
  * @author Chris
  */
-public class CajaGrande {
-    
+public class CajaGrande extends Caja {
+
+    public CajaGrande() {
+        super(50);
+    }
+
+    @Override
+    public String toString() {
+        return "Caja Grande";
+    }
 }

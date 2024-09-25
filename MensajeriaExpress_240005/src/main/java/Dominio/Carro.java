@@ -8,6 +8,14 @@ package Dominio;
  *
  * @author Chris
  */
-public class Carro {
-    
+public class Carro extends Transporte{
+
+    public Carro() {
+        super(40, 30); // Capacidad de pasajeros y carga predeterminada
+    }
+
+    @Override
+    public String toString() {
+        return "Carro";
+    }
 }

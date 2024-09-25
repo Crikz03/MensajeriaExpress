@@ -8,14 +8,19 @@ package Dominio;
  *
  * @author Chris
  */
-public class Dron extends Transporte {
+public abstract class Servicio {
 
-    public Dron() {
-        super(60, 20); // Capacidad de pasajeros y carga predeterminada
+    private double costo;
+
+    public Servicio(double costo) {
+        this.costo = costo;
     }
 
-    @Override
-    public String toString() {
-        return "Dron";
+    public double getCosto() {
+        return costo;
+    }
+
+    public void setCosto(double costo) {
+        this.costo = costo;
     }
 }
